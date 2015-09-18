@@ -9,7 +9,7 @@ end
 
 post '/submit' do
 	@model = Model.new(params[:model])
-	if @model.save
+	if @model.save #save method comes from active record
 		redirect '/models'
 	else
 		"Sorry, there was an error!"
