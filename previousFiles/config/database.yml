@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  database: development
+  username: <%= ENV['PG_USER'] %> #env variables should define in bash profile
+  password: <%= ENV['PG_PASS'] %>
+  host: localhost
+
+  #Database called development
